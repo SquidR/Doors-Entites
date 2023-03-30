@@ -2,8 +2,8 @@ local Spawner = loadstring(game:HttpGet("https://raw.githubusercontent.com/Squid
 
 -- Create entity
 local entityTable = Spawner.createEntity({
-    CustomName = "Example", -- Custom name of your entity
-    Model = "PutEntityHere", -- Can be GitHub file or rbxassetid
+    CustomName = "Depth", -- Custom name of your entity
+    Model = "github.com/SquidR/Doors-Entites/blob/main/Depth.rbxm?raw=true", -- Can be GitHub file or rbxassetid
     Speed = 300, -- Percentage, 100 = default Rush speed
     Ai = 1
     DelayTime = 2, -- Time before starting cycles (seconds)
