@@ -5,7 +5,6 @@ local entityTable = Spawner.createEntity({
     CustomName = "Depth", -- Custom name of your entity
     Model = "github.com/SquidR/Doors-Entites/blob/main/Depth.rbxm?raw=true", -- Can be GitHub file or rbxassetid
     Speed = 300, -- Percentage, 100 = default Rush speed
-    Ai = 1
     DelayTime = 2, -- Time before starting cycles (seconds)
     HeightOffset = 5,
     CanKill = true,
