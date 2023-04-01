@@ -253,7 +253,7 @@ Spawner.runEntity = function(entityTable)
                 if onScreen then
                     task.spawn(entityTable.Debug.OnLookAtEntity)
                 else
-                    task.spawn(entityTable.Debug.OnAwayFromEntity)
+                    task.spawn(entityTable.Debug.OnLookAwayFromEntity)
                 end
                 -- Kill player
 
