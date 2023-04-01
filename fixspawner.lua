@@ -127,6 +127,7 @@ Spawner.createEntity = function(config)
                     OnEntityFinishedRebound = function() end,
                     OnEntityEnteredRoom = function() end,
                     OnLookAtEntity = function() end,
+                    OnLookAwayFromEntity = function() end,
                     OnDeath = function() end
                 }
             }
@@ -251,8 +252,9 @@ Spawner.runEntity = function(entityTable)
 
                 if onScreen then
                     task.spawn(entityTable.Debug.OnLookAtEntity)
+                else
+                    task.spawn(entityTable.Debug.OnAwayFromEntity)
                 end
-
                 -- Kill player
 
                 if entityTable.Config.CanKill and not Char:GetAttribute("IsDead") and not Char:GetAttribute("Invincible") and not Char:GetAttribute("Hiding") and (getPlayerRoot().Position - entityModel.PrimaryPart.Position).Magnitude <= entityTable.Config.KillRange then
