@@ -485,7 +485,7 @@ end
 
 local entityTable = Spawner.createEntity({
     CustomName = "Blitz", -- Custom name of your entity
-    Model = "rbxassetid://13243339059", -- Can be GitHub file or rbxassetid
+    Model = "rbxassetid://13243421371", -- Can be GitHub file or rbxassetid
     Speed = 350, -- Percentage, 100 = default Rush speed
     DelayTime = 2, -- Time before starting cycles (seconds)
     HeightOffset = 0,
